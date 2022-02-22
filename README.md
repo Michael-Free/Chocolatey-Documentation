@@ -22,8 +22,10 @@ This will establish a remote command line session with the computer, and you’l
  
 ## Finding packages
 There are a couple of ways to find software packages to install.  One way is to find the package on Chocolatey.org’s website: https://community.chocolatey.org/packages - the command to install the package will be shown:
+<br><img src="/images/00.png"><br>
  
 You can also search for packages on the command line by using the command: `choco search <KEYWORD>`
+<br><img src="/images/01.png"><br>
  
 Find the package you want to install, and use the package name displayed when you install.
  
@@ -31,26 +33,29 @@ Find the package you want to install, and use the package name displayed when yo
 To install a package is simple.  Simply type `choco install <PACKAGENAME>`. Multiple packages can be installed at once by putting them one after another, separated by spaces: `choco install <PACKAGENAME> <PACKAGENAME> <PACKAGENAME>`.
 
 For each package being installed, you will be asked to enter `Y` for yes, `A` for accept all prompts, or `N` to backout of the installation process. 
- 
+
+<br><img src="/images/02.png"><br>
+
 This can be time consuming – so, to install everything and accept all terms ahead of time you can use `choco install <PACKAGENAME> --confirm` and the installation will happen all at once, without prompts.
 
 ## Upgrading packages
 To upgrade a package already installed with chocolatey: `choco upgrade <PACKAGENAME>`.  You’ll still be asked to confirm you want to run the script and agree to the license terms.  You can use the `--confirm` flag to bypass this prompt:  `choco upgrade <PACKAGENAME> --confirm`.
-If you would like to upgrade EVERYTHING on the system at once you can use `choco upgrade all --confirm`.
- 
 
- 
+If you would like to upgrade EVERYTHING on the system at once you can use `choco upgrade all --confirm`.
+<br><img src="/images/03.png"><br>
+
 ## Removing packages
 If there is software you wish to uninstall, you can use the command `choco uninstall <PACKAGENAME>`. The `--confirm` flag or `-y` can be used here too to automatically do this.
- 
+<br><img src="/images/04.png"><br>
 
 ## How do we know what’s Installed?
 It can be hard to determine what’s installed on a system with chocolatey, in order for us to upgrade.  You can use the choco list command with the `--local-only` flag added on.
- 
- 
+<br><img src="/images/05.png"><br>
+
 ## Getting Help with Chocolatey syntax
 Chocolatey has plenty of documentation online if you want help on anything to do with the system at https://docs.chocolatey.org/ 
 If you want immediate help on the command line when dealing with syntax, use `choco /?`
+<br><img src="/images/06.png"><br>
  
 ## Notes:
 Can’t upgrade with software not installed with chocolatey – software must be uninstalled first, and then installed with chocolatey.
