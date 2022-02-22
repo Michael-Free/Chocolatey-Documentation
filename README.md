@@ -50,7 +50,7 @@ It can be hard to determine what’s installed on a system with chocolatey, in o
  
 ## Getting Help with Chocolatey syntax
 Chocolatey has plenty of documentation online if you want help on anything to do with the system at https://docs.chocolatey.org/ 
-If you want immediate help on the command line when dealing with syntax, use choco /?
+If you want immediate help on the command line when dealing with syntax, use `choco /?`
  
 ## Notes:
 Can’t upgrade with software not installed with chocolatey – software must be uninstalled first, and then installed with chocolatey.
