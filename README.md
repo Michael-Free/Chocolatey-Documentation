@@ -35,7 +35,7 @@ For each package being installed, you will be asked to enter `Y` for yes, `A` fo
 This can be time consuming – so, to install everything and accept all terms ahead of time you can use `choco install <PACKAGENAME> --confirm` and the installation will happen all at once, without prompts.
 
 ## Upgrading packages
-To upgrade a package already installed with chocolatey: `choco upgrade <PACKAGENAME>`.  You’ll still be asked to confirm you want to run the script and agree to the license terms.  You can use the --confirm flag to bypass this prompt:  `choco upgrade <PACKAGENAME> --confirm`.
+To upgrade a package already installed with chocolatey: `choco upgrade <PACKAGENAME>`.  You’ll still be asked to confirm you want to run the script and agree to the license terms.  You can use the `--confirm` flag to bypass this prompt:  `choco upgrade <PACKAGENAME> --confirm`.
 If you would like to upgrade EVERYTHING on the system at once you can use `choco upgrade all --confirm`.
  
 
