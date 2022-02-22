@@ -11,7 +11,7 @@ From a software compliance perspective, if we’re using the community repositor
 
 ## How do we Install Chocolatey?
 Chocolatey has several ways to be deployed using different automation systems.  However, we don’t have any of them setup in our organization (ansible, chef, puppet, etc).  We can install it individually on each machine using a one-liner powershell command.  This command will need to be ran via an Administrative prompt.
-```
+```powershell
 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
 ```
 If we have Windows Remote Management installed on all devices on the network, we’ll be able to install this across all devices connected to our network.  We can run a script to automatically install this via the domain controller, and keep track of those who weren’t successfully installed.  Installing Windows Remote Management can be done via this link: https://docs.microsoft.com/en-us/windows/win32/winrm/installation-and-configuration-for-windows-remote-management
